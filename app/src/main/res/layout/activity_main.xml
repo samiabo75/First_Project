@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@android:color/black">
+
+    <TextView
+
+        android:id="@+id/T_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username:"
+        android:textColor="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/T_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="password:"
+        android:layout_below="@id/T_username"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="15px"/>
+
+    <EditText
+    android:id="@+id/B_username"
+    android:layout_width="500px"
+    android:layout_height="50px"
+        android:layout_marginLeft="10px"
+        android:layout_toRightOf="@id/T_username"
+        android:inputType="text"
+        android:background="@android:color/white"/>
+
+    <EditText
+        android:id="@+id/B_password"
+        android:layout_width="500px"
+        android:layout_height="50px"
+        android:inputType="textPassword"
+        android:layout_below="@id/B_username"
+        android:layout_marginTop="15px"
+        android:layout_marginLeft="10px"
+        android:layout_toRightOf="@id/T_password"
+        android:background="@android:color/white"/>/>
+
+</RelativeLayout>
